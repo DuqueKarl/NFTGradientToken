@@ -64,14 +64,14 @@ module.exports = {
     ropsten: {
       //provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/${infuraKey}`),
       provider: () => new HDWalletProvider(
-	    mnemonic,
-		`https://ropsten.infura.io/${infuraKey}`,
-		0,
-		1,
-		true,
-		"m/44'/889'/0'/0/",	// Connect with HDPath same as TOMO
-	  ),
-	  network_id: 3,       // Ropsten's id
+        mnemonic,
+        `https://ropsten.infura.io/${infuraKey}`,
+        0,
+        1,
+        true,
+        "m/44'/889'/0'/0/",	// Connect with HDPath same as TOMO
+      ),
+      network_id: 3,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
@@ -79,7 +79,7 @@ module.exports = {
     },
 
     // Useful for deploying to TomoChain testnet
-	tomotestnet: {
+    tomotestnet: {
       provider: () => new HDWalletProvider(
         mnemonic,
         "https://testnet.tomochain.com",
@@ -94,7 +94,7 @@ module.exports = {
     },
 
     // Useful for deploying to TomoChain mainnet
-	tomomainnet: {
+    tomomainnet: {
       provider: () => new HDWalletProvider(
         mnemonic,
         "https://rpc.tomochain.com",
@@ -105,7 +105,7 @@ module.exports = {
       ),
       network_id: "88",
       // Smart contract creation fee: gas price 10000 Gwei, gas limit >= 1000000 ( https://docs.tomochain.com/general/networks/ )
-	  gas: 3000000,
+      gas: 3000000,
       gasPrice: 10000000000000, 	// TomoChain requires min 10 TOMO to deploy, to fight spamming attacks
     },
 
