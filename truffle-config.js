@@ -65,13 +65,13 @@ module.exports = {
       //provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/${infuraKey}`),
       provider: () => new HDWalletProvider(
         mnemonic,
-		    `https://ropsten.infura.io/${infuraKey}`,
-		    0,
-		    1,
-		    true,
-		    "m/44'/889'/0'/0/",	// Connect with HDPath same as TOMO
-	    ),
-	    network_id: 3,       // Ropsten's id
+        `https://ropsten.infura.io/${infuraKey}`,
+        0,
+        1,
+        true,
+        "m/44'/889'/0'/0/",	// Connect with HDPath same as TOMO
+      ),
+      network_id: 3,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
