@@ -9,7 +9,7 @@ import 'openzeppelin-solidity/contracts/ownership/Ownable.sol';
 
 contract GradientToken is ERC721Full, Ownable {
   
-	using Counters for Counters.Counter;
+  using Counters for Counters.Counter;
   Counters.Counter private tokenId;
 	
   struct Gradient {
@@ -42,7 +42,7 @@ contract GradientToken is ERC721Full, Ownable {
     
     Gradient memory _gradient = Gradient({ outer: _outer, inner: _inner });
     gradients.push(_gradient);
-	  _mint(msg.sender, gradientTokenId);
+    _mint(msg.sender, gradientTokenId);
     tokenId.increment();
   }
 	
